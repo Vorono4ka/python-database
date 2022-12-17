@@ -1,12 +1,12 @@
 import atexit
 
-from .test_database import TestDatabase
+from .example_database import ExampleDatabase
 
-test_database = TestDatabase()
+example_database = ExampleDatabase()
 
 
 def close_all_databases():
-    test_database.close()
+    example_database.close()
 
 
 atexit.register(close_all_databases)
